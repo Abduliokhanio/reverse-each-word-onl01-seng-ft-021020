@@ -8,5 +8,5 @@ def reverse_each_word(string)
   array02.push(array01[count].reverse)
   count +=1
 end
-puts array02.join(' ')
+return array02.join(' ')
 end
