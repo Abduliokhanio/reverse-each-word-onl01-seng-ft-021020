@@ -1,12 +1,10 @@
 def reverse_each_word(string)
-  array02 = []
+  array2 = []
   array01 = string.split
   #puts array01
 
-  count = 0 
-  while count != array01.length
-  array02.push(array01[count].reverse)
-  count +=1
-end
-return array02.join(' ')
+  array01.collect do |letters|
+    array2.push(letters.reverse)
+  end
+  puts array2.join(" ")
 end
