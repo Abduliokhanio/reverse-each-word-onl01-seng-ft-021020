@@ -6,5 +6,5 @@ def reverse_each_word(string)
   array01.collect do |letters|
     array2.push(letters.reverse)
   end
-  puts array2.join(" ")
+  return array2.join(" ")
 end
